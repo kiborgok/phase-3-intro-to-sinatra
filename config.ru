@@ -6,7 +6,7 @@ class App < Sinatra::Base
   set :default_content_type, 'application/json'
 
   get '/' do
-    '<h2>Hello <em>World</em>!</h2>'
+    {message: 'Hello world'}.to_json
   end
 
   get '/dice' do
